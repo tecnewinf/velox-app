@@ -14,6 +14,7 @@
   /* Configurações de execução e ambiente */
   "vars": {
     "ENVIRONMENT": "production"
+    
   },
 
   /* Observabilidade e Logs em tempo real */
@@ -22,6 +23,9 @@
   }
 
   /* 
+   * "FRONTEND_ORIGIN" = https://tecnewinf.github.io/velox-app/
+   * "WEBHOOK_URL = https://velox-teste.thiagomacedolima.workers.dev/
+   * "TEST_PAYER_EMAIL"
    * OBSERVAÇÃO DE SEGURANÇA:
    * O segredo `MP_ACCESS_TOKEN` NÃO deve ficar neste arquivo de configuração.
    * Defina-o no ambiente utilizando o comando Wrangler CLI:
