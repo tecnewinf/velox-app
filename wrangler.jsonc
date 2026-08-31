@@ -1,0 +1,34 @@
+/**
+ * Configuração do Cloudflare Worker para o serviço Velox PIX & Mercado Pago
+ * Para mais detalhes: https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "velox-pix-worker",
+  "main": "worker.js",
+  "compatibility_date": "2024-09-25",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+
+  /* Configurações de execução e ambiente */
+  "vars": {
+    "ENVIRONMENT": "production"
+  },
+
+  /* Observabilidade e Logs em tempo real */
+  "observability": {
+    "enabled": true
+  }
+
+  /* 
+   * OBSERVAÇÃO DE SEGURANÇA:
+   * O segredo `MP_ACCESS_TOKEN` NÃO deve ficar neste arquivo de configuração.
+   * Defina-o no ambiente utilizando o comando Wrangler CLI:
+   *
+   *   npx wrangler secret put MP_ACCESS_TOKEN
+   *
+   * Ou adicione no painel da Cloudflare em:
+   * Settings > Variables > Environment Variables / Secrets
+   */
+}

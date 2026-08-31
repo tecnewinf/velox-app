@@ -1,0 +1,17 @@
+{
+  "name": "Uber OpenStreetMap Clone",
+  "short_name": "OSM Ride",
+  "description": "Interface móvel de mapas inspirada em aplicativos de mobilidade urbana.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme-color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
